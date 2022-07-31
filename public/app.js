@@ -18,8 +18,8 @@ var applePayUiController = (function () {
 })()
 
 var applePayController = (function (uiController) {
-    var BACKEND_URL_VALIDATE_SESSION = 'https://{your backend URL}/validateSession'
-    var BACKEND_URL_PAY = 'https://{your backend URL}/pay'
+    var BACKEND_URL_VALIDATE_SESSION = 'https://us-central1-apple-pay-3ed05.cloudfunctions.net/app/validateSession'
+    var BACKEND_URL_PAY = 'https://us-central1-apple-pay-3ed05.cloudfunctions.net/app/pay'
 
     // High level configuration options.
     var config = {
@@ -30,8 +30,8 @@ var applePayController = (function (uiController) {
             product_price: 10.0,
             shop_name: 'Demo Shop',
             shop_localisation: {
-                currencyCode: 'GBP',
-                countryCode: 'GB'
+                currencyCode: 'AED',
+                countryCode: 'AE'
             }
         },
         shipping: {
